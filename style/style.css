@@ -1,20 +1,22 @@
-.gallery{
+#gallery{
 	margin: 0 auto;
 	width: 860px;
+	height: 400px;
 	text-align: center;
 }
-.gallery .photo img{
+#gallery .photo img{
 	width: 100%;
+	height: autopx;
 	display: none;	
 }
-.gallery .photo img:first-child{
+#gallery .photo img:first-child{
 	display: block;
 
 }
-.gallery .buttons{
+#gallery .buttons{
 	margin: 20px;
 }
-.gallery .buttons a{
+#gallery .buttons a{
 	
 	border: 1px solid gray;
 	text-decoration: none;
