@@ -5,23 +5,24 @@ let myPhoto = document.querySelectorAll("#gallery .photo img");
 let i = 0;
 
 btn_next.onclick = function() {
-	myPhoto[i].style.display = "none";
+	myPhoto[i].className = "";
 	i++;
 
 	if(i >= myPhoto.length){
 		i = 0;
 	}
 
-	myPhoto[i].style.display = "block";
+	myPhoto[i].className = "showed";
 	
 }
 
 btn_prev.onclick = function() {
-	myPhoto[i].style.display = "none"
+	myPhoto[i].className = "";
 	i--;
 	if(i < 0){
 		i = myPhoto.length - 1;
 	}
-	myPhoto[i].style.display = "block";
+
+	myPhoto[i].className = "showed";
 
 }
